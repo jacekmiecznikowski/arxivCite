@@ -27,8 +27,8 @@ def isOlder(contender, publication):
 	return publication < contender
 
 dict_list = []
-pprint.pprint("Reading output.csv")
-reader = csv.DictReader(open('output.csv', 'r'), delimiter=',', quotechar='"', escapechar='\\')
+pprint.pprint("Reading publications.csv")
+reader = csv.DictReader(open('publications.csv', 'r'), delimiter=',', quotechar='"', escapechar='\\')
 for line in reader:
     dict_list.append(line)
 
